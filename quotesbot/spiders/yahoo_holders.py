@@ -12,36 +12,48 @@ class ToScrapeSpiderYahooHolders(scrapy.Spider):
     field_delim = "|"
 
     def start_requests(self):
+        # Create an empty file
         if os.path.exists(self.filename):
             os.remove(self.filename)
 
-        urls = [
-            'https://uk.finance.yahoo.com/quote/AAPL/holders?p=AAPL',
-            'https://uk.finance.yahoo.com/quote/BABA/holders?p=BABA',
-        ]
+        # Load tickers
+        ticker_file = open("tickers.txt","r")
+        tickers = []
+        for line in ticker_file:
+            tickers.append(line.strip())
+        ticker_file.close();
 
-        for url in urls:
-           yield scrapy.Request(url=url, callback=self.parse)
+        # Send url to parse
+        url_prefix  = "https://uk.finance.yahoo.com/quote/"
+        url_mid     = "/holders?p="
+        for ticker in tickers:
+            url = url_prefix+ticker+url_mid+ticker
+            request = scrapy.Request(url=url, callback=self.parse)
+            request.meta['ticker'] = ticker
+            request.meta['dont_redirect'] = 1
+            yield request
+
 
     def parse(self, response):
-        file = open(self.filename,"a")
-        file.write(response.url+"\n\n")
+        out_file = open(self.filename,"a")
+        out_file.write(response.meta['ticker']+"\n")
+        out_file.write(response.url+"\n")
 
-        self.parse_table(file,response,"Top mutual fund holders")
-        self.parse_table(file,response,"Top institutional holders")
+        self.parse_table(out_file,response,"Top mutual fund holders")
+        self.parse_table(out_file,response,"Top institutional holders")
 
-        file.close()
+        out_file.close()
 
 
     #############################################################
 
-    def parse_table(self, file, response, table_name):
-        file.write(table_name+"\n")
+    def parse_table(self,out_file, response, table_name):
+        out_file.write(table_name+"\n")
 
         # Write fields name
         fields = ["Holder", "Shares", "Date reported", "% out","Value"]
         str_fields = self.field_delim.join([str(elem) for elem in fields])
-        file.write(str_fields+"\n")
+        out_file.write(str_fields+"\n")
 
         # Parse table
         path_name = "//h3/span[contains(text(),'"+table_name+"')]"
@@ -60,6 +72,6 @@ class ToScrapeSpiderYahooHolders(scrapy.Spider):
             #convert elements in list to string, and split by "|"
             one_line = self.field_delim.join([str(elem) for elem in text])
             print(one_line)
-            file.write(one_line+"\n")
-        file.write("\n")
+            out_file.write(one_line+"\n")
+        out_file.write("\n")
 
