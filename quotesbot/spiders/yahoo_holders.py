@@ -4,8 +4,6 @@ import os
 
 import scrapy
 
-#https://stackoverflow.com/questions/41472582/first-time-using-scrapy-trying-to-crawl-a-set-of-tables
-
 class ToScrapeSpiderYahooHolders(scrapy.Spider):
     name = 'yahoo_holders'
     filename = name+".txt"
