@@ -7,7 +7,7 @@ class ToScrapeSpiderYahoo(scrapy.Spider):
     name = 'yahoo'
     
     def start_requests(self):
-    start_urls = [
+    urls = [
         'https://uk.finance.yahoo.com/quote/AAPL/holders?p=AAPL',
         'https://uk.finance.yahoo.com/quote/BABA/holders?p=BABA',
     ]
