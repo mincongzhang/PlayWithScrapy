@@ -2,7 +2,7 @@
 import scrapy
 
 
-class ToScrapeSpiderXPath(scrapy.Spider):
+class ToScrapeSpiderYahoo(scrapy.Spider):
     name = 'yahoo'
     start_urls = [
         'https://uk.finance.yahoo.com/quote/AAPL/holders?p=AAPL',
