@@ -11,3 +11,9 @@ http://rachbelaid.com/capturing-screenshots-of-website-with-python/
 
 ### selenium screenshots render page
 https://stackoverflow.com/questions/22739514/how-to-get-html-with-javascript-rendered-sourcecode-by-using-selenium/22739613
+
+### PhantomJS screenshots for dynamic content
+https://stackoverflow.com/questions/32531881/retrieve-fully-populated-dynamic-content-with-phantomjs
+
+### Python to generate pdf
+https://stackoverflow.com/a/16632518
