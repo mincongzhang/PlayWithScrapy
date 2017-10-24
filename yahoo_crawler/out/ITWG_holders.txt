@@ -1,0 +1,5 @@
+Top mutual fund holders
+Holder|Shares|Date reported|% out|Value
+Federated High Yield Trust|53,121|29 Jun 2017|0.54%|1,859,235
+
+https://uk.finance.yahoo.com/quote/ITWG/holders?p=ITWG

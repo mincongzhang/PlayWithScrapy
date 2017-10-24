@@ -1,0 +1,27 @@
+Top mutual fund holders
+Holder|Shares|Date reported|% out|Value
+Vanguard Extended Market Index Fund|302,891|30 Mar 2017|1.62%|666,360
+Royce Value Trust, Inc.|216,766|30 Mar 2017|1.16%|476,885
+Vanguard Total Stock Market Index Fund|163,800|30 Mar 2017|0.88%|360,360
+Clearwater Small Companies Fund|141,581|30 Mar 2017|0.76%|311,478
+Royce Micro Cap Trust|105,600|30 Mar 2017|0.56%|232,320
+Fidelity Extended Market Index Fund|55,905|29 Jun 2017|0.30%|134,731
+iShares Micro Cap ETF|40,168|29 Jun 2017|0.21%|96,804
+Fidelity Total Market Index Fund|39,218|29 Jun 2017|0.21%|94,515
+Valic Company I-Small Cap Fd|35,500|27 Feb 2017|0.19%|80,229
+Vanguard Institutional Index-Inst Total Stock Market Ind|26,680|30 Mar 2017|0.14%|58,696
+
+Top institutional holders
+Holder|Shares|Date reported|% out|Value
+Fondren Management, LP|1,301,874|29 Jun 2017|6.96%|3,137,516
+VIEX Capital Advisors, LLC|1,083,531|29 Jun 2017|5.79%|2,611,309
+Renaissance Technologies, LLC|955,697|29 Jun 2017|5.11%|2,303,229
+Kennedy Capital Management, Inc.|915,383|29 Jun 2017|4.89%|2,206,073
+Vanguard Group, Inc. (The)|532,759|29 Jun 2017|2.85%|1,283,949
+Blackrock Inc.|513,778|29 Jun 2017|2.75%|1,238,205
+Royce & Associates LP|322,366|29 Jun 2017|1.72%|776,902
+Herald Investment Management Ltd|261,072|29 Jun 2017|1.40%|629,183
+Geode Capital Management, LLC|111,827|29 Jun 2017|0.60%|269,503
+CALPERS (California-Public Employees Retirement System)|105,166|29 Jun 2017|0.56%|253,450
+
+https://uk.finance.yahoo.com/quote/SPRT/holders?p=SPRT

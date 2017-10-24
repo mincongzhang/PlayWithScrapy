@@ -1,0 +1,27 @@
+Top mutual fund holders
+Holder|Shares|Date reported|% out|Value
+Nuveen Small Cap Value Fund|511,290|29 Jun 2017|2.27%|15,415,393
+Janus Henderson Venture Fund|438,519|29 Jun 2017|1.95%|13,221,347
+John Hancock Var Ins Tr-Small Cap Value Tr|410,088|30 Mar 2017|1.82%|13,758,452
+Vanguard Total Stock Market Index Fund|409,839|30 Mar 2017|1.82%|13,750,098
+Meridian Small Cap Growth Fund|385,399|30 Mar 2017|1.71%|12,930,136
+USAA Mutual Fund Tr-Small Cap Stock Fund|342,177|29 Apr 2017|1.52%|11,993,303
+iShares Russell 2000 ETF|339,015|29 Jun 2017|1.51%|10,221,302
+Vanguard Extended Market Index Fund|245,857|30 Mar 2017|1.09%|8,248,502
+AMG Managers River Road Small Cap Value Fund|215,369|30 Mar 2017|0.96%|7,225,629
+John Hancock Fds II-Small Cap Value Fund|210,238|29 Jun 2017|0.93%|6,338,675
+
+Top institutional holders
+Holder|Shares|Date reported|% out|Value
+Wellington Management Company, LLP|2,510,966|29 Jun 2017|11.16%|75,705,623
+Blackrock Inc.|1,224,003|29 Jun 2017|5.44%|36,903,689
+ArrowMark Colorado Holdings LLC|1,123,148|29 Jun 2017|4.99%|33,862,911
+P2 Capital Partners, LLC|1,112,900|29 Jun 2017|4.94%|33,553,934
+Bernzott Capital Advisors|945,720|29 Jun 2017|4.20%|28,513,457
+Vanguard Group, Inc. (The)|942,891|29 Jun 2017|4.19%|28,428,163
+Dimensional Fund Advisors LP|914,092|29 Jun 2017|4.06%|27,559,873
+River Road Asset Management, LLC|863,909|29 Jun 2017|3.84%|26,046,856
+Investment Counselors of Maryland|712,112|29 Jun 2017|3.16%|21,470,176
+Lionstone Capital Management, LLC|655,615|29 Jun 2017|2.91%|19,766,791
+
+https://uk.finance.yahoo.com/quote/SP/holders?p=SP

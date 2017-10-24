@@ -1,0 +1,27 @@
+Top mutual fund holders
+Holder|Shares|Date reported|% out|Value
+iShares Core S&P Smallcap ETF|1,685,727|29 Jun 2017|4.25%|111,932,275
+Vanguard Small-Cap Index Fund|864,513|30 Mar 2017|2.18%|61,855,907
+Vanguard Total Stock Market Index Fund|822,604|30 Mar 2017|2.07%|58,857,318
+iShares Russell 2000 ETF|725,425|29 Jun 2017|1.83%|48,168,221
+Columbia Acorn Fund|640,878|30 Mar 2017|1.61%|45,854,822
+Eagle Series Tr-Eagle Small Cap Growth Fund|574,861|29 Jun 2017|1.45%|38,170,771
+Lord Abbett Developing Growth Fund|544,114|29 Apr 2017|1.37%|40,264,436
+Lord Abbett Securities Trust-Growth Leaders Fund|490,783|29 Apr 2017|1.24%|36,317,942
+iShares S&P Small Cap 600 Growth Index ETF|473,433|29 Jun 2017|1.19%|31,435,951
+Vanguard Small-Cap Growth Index Fund|472,686|30 Mar 2017|1.19%|33,820,684
+
+Top institutional holders
+Holder|Shares|Date reported|% out|Value
+Blackrock Inc.|4,659,600|29 Jun 2017|11.74%|309,397,447
+Vanguard Group, Inc. (The)|3,512,829|29 Jun 2017|8.85%|233,251,850
+Times Square Capital Management, LLC|2,422,884|29 Jun 2017|6.10%|160,879,501
+Df Dent & Co Inc|1,525,539|29 Jun 2017|3.84%|101,295,791
+FMR, LLC|1,337,409|29 Jun 2017|3.37%|88,803,959
+Wellington Management Company, LLP|1,239,402|29 Jun 2017|3.12%|82,296,294
+Lord Abbett & Co|1,149,608|29 Jun 2017|2.90%|76,333,972
+Conestoga Capital Advisors, LLC|1,067,886|29 Sep 2017|2.69%|65,247,832
+Eagle Asset Management Inc|966,101|29 Jun 2017|2.43%|64,149,107
+Renaissance Technologies, LLC|954,100|29 Jun 2017|2.40%|63,352,241
+
+https://uk.finance.yahoo.com/quote/WAGE/holders?p=WAGE

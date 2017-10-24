@@ -1,0 +1,14 @@
+Top mutual fund holders
+Holder|Shares|Date reported|% out|Value
+DFA Investment Dimensions-Canadian Small Company Series|285,291|30 Jan 2017|0.37%|4,208,042
+DFA International Small Cap Value Portfolio|258,212|29 Apr 2017|0.34%|3,945,479
+DFA International Core Equity Portfolio|170,665|29 Apr 2017|0.22%|2,607,761
+iShares Global Clean Energy ETF|146,544|29 Jun 2017|0.19%|2,498,575
+Powershares Exgh Traded Fd Tr II-Pwrshs Global Clean Energy|59,407|29 Jun 2017|0.08%|1,012,889
+Advanced Series Tr-AST FI Pyramis Quantitative Port|55,600|30 Mar 2017|0.07%|866,804
+Hartford Environmental Opportunities Fund|46,300|29 Apr 2017|0.06%|707,463
+College Retirement Equities Fund-Stock Account|39,496|30 Dec 2016|0.05%|520,162
+Calvert Impact Fund, Inc-Calvert Global Energy Solutions Fund|30,678|30 Mar 2017|0.04%|478,270
+DFA International Vector Equity Port|25,000|29 Apr 2017|0.03%|381,999
+
+https://uk.finance.yahoo.com/quote/BRLXF/holders?p=BRLXF
