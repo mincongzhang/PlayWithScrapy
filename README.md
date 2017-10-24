@@ -8,3 +8,6 @@ https://stackoverflow.com/questions/45172260/scrapy-splash-screenshots
 
 ### selenium screenshots
 http://rachbelaid.com/capturing-screenshots-of-website-with-python/
+
+### selenium screenshots render page
+https://stackoverflow.com/questions/22739514/how-to-get-html-with-javascript-rendered-sourcecode-by-using-selenium/22739613
