@@ -22,4 +22,7 @@ https://stackoverflow.com/questions/9983263/crop-the-image-using-pil-in-python
 https://pillow.readthedocs.io/en/4.3.x/
 
 ##### Python to generate pdf
-https://stackoverflow.com/a/16632518
+https://stackoverflow.com/a/16632518  
+SimpleDocTemplate  
+https://stackoverflow.com/a/9505301  
+https://gist.github.com/cwebber314/8514907  
