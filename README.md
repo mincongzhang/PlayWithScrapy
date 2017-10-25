@@ -18,7 +18,7 @@ https://stackoverflow.com/questions/22739514/how-to-get-html-with-javascript-ren
 https://stackoverflow.com/questions/32531881/retrieve-fully-populated-dynamic-content-with-phantomjs
 
 ##### Python image cropping
-https://stackoverflow.com/questions/9983263/crop-the-image-using-pil-in-python
+https://stackoverflow.com/questions/9983263/crop-the-image-using-pil-in-python  
 https://pillow.readthedocs.io/en/4.3.x/
 
 ##### Python to generate pdf
