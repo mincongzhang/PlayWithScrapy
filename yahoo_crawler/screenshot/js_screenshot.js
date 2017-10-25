@@ -1,10 +1,25 @@
 //https://stackoverflow.com/questions/32531881/retrieve-fully-populated-dynamic-content-with-phantomjs
 //https://stackoverflow.com/questions/25288307/phantomjs-and-clicking-a-form-button
+var system = require('system');
+var TICKER = "";
+var LINK = "";
+var IMAGE_NAME = "";
 
+if (system.args.length > 1){
+    TICKER = system.args[1];
+    LINK = "https://uk.finance.yahoo.com/quote/"+TICKER+"?p="+TICKER;
+    IMAGE_NAME = TICKER+".png";
+    console.log("Processing ticker ["+TICKER+"]");
+    console.log("Link ["+LINK+"]");
+    console.log("Image name ["+IMAGE_NAME+"]")
+} else {
+    console.log("No ticker provided");
+    phantom.exit();
+}
+
+var LOAD_IN_PROGRESS = false;
+var STEP_INDEX = 0;
 var page = require('webpage').create();
-
-var loadInProgress = false;
-var step_index = 0;
 
 // Route "console.log()" calls from within the Page context to the main Phantom context (i.e. current "this")
 page.onConsoleMessage = function(msg) {
@@ -16,12 +31,12 @@ page.onAlert = function(msg) {
 };
 
 page.onLoadStarted = function() {
-    loadInProgress = true;
+    LOAD_IN_PROGRESS = true;
     console.log("load started");
 };
 
 page.onLoadFinished = function(status) {
-    loadInProgress = false;
+    LOAD_IN_PROGRESS = false;
     if (status !== 'success') {
         console.log('Unable to access network');
         phantom.exit();
@@ -32,8 +47,8 @@ page.onLoadFinished = function(status) {
 
 var steps = [
              function() {
-                 console.log("Opening page");
-                 page.open('https://uk.finance.yahoo.com/quote/AAPL?p=AAPL');
+                 console.log("Opening page ["+LINK+"]");
+                 page.open(LINK);
              },
 
              function() {
@@ -56,19 +71,19 @@ var steps = [
 
 
              function() {
-                 console.log("Rendering image");
-                 page.render("out.png");
+                 console.log("Rendering image ["+IMAGE_NAME+"]");
+                 page.render(IMAGE_NAME);
              }
              ];
 
 interval = setInterval(function() {
-        if (!loadInProgress && typeof steps[step_index] == "function") {
-            console.log("step " + (step_index + 1));
-            steps[step_index]();
-            step_index++;
+        if (!LOAD_IN_PROGRESS && typeof steps[STEP_INDEX] == "function") {
+            console.log("step " + (STEP_INDEX + 1));
+            steps[STEP_INDEX]();
+            STEP_INDEX++;
         }
-        if (typeof steps[step_index] != "function") {
+        if (typeof steps[STEP_INDEX] != "function") {
             console.log("All done!");
             phantom.exit();
         }
-    }, 10000);
+    }, 10000);//wait for page rendering
