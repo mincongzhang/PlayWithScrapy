@@ -4,13 +4,13 @@ import os
 import scrapy
 
 class ToScrapeSpiderYahooHolders(scrapy.Spider):
-    name = 'yahoo_holders'
-    filename = name+".txt"
+    name = "yahoo_holders"
+    out_path = "/home/user/mizhang/hackathon/crawler/out/"
     field_delim = "|"
 
     def start_requests(self):
         # Load tickers
-        ticker_file = open("tickers.txt","r")
+        ticker_file = open(self.out_path+"tickers.txt","r")
         tickers = []
         for line in ticker_file:
             tickers.append(line.strip())
@@ -31,7 +31,7 @@ class ToScrapeSpiderYahooHolders(scrapy.Spider):
 
 
     def parse(self, response):
-        filename = "./out/"+response.meta['ticker']+"_holders.txt"
+        filename = self.out_path+response.meta['ticker']+"_holders.csv"
 
         #Check filesize, if not empty, skip
         if os.path.isfile(filename) and os.path.getsize(filename) > 0:
@@ -54,7 +54,7 @@ class ToScrapeSpiderYahooHolders(scrapy.Spider):
 
     #############################################################
 
-    def parse_table(self,out_file, response, table_name):
+    def parse_table(self, out_file, response, table_name):
 
         # Parse table
         path_name = "//h3/span[contains(text(),'"+table_name+"')]"
@@ -70,7 +70,7 @@ class ToScrapeSpiderYahooHolders(scrapy.Spider):
         out_file.write(table_name+"\n")
         # Write fields name
         fields = ["Holder", "Shares", "Date reported", "% out","Value"]
-        str_fields = self.field_delim.join([str(elem) for elem in fields])
+        str_fields = self.field_delim.join(fields)
         out_file.write(str_fields+"\n")
 
         for row in rows:
@@ -81,8 +81,13 @@ class ToScrapeSpiderYahooHolders(scrapy.Spider):
             date_reported = row.xpath(".//td/span/text()").extract_first()
             text.insert(2,date_reported)
 
-            #convert elements in list to string, and split by "|"
-            one_line = self.field_delim.join([str(elem) for elem in text])
+            #convert elements in list to string
+            str_elems = []
+            for elem in text:
+                str_elems.append(elem);
+
+            #split with delim
+            one_line = self.field_delim.join(str_elems)
             print(one_line)
             out_file.write(one_line+"\n")
 

@@ -4,12 +4,13 @@ import os
 import scrapy
 
 class ToScrapeSpiderYahooSummary(scrapy.Spider):
-    name = 'yahoo_summary'
+    name = "yahoo_summary"
+    out_path = "/home/user/mizhang/hackathon/crawler/out/"
     field_delim = "|"
 
     def start_requests(self):
         # Load tickers
-        ticker_file = open("tickers.txt","r")
+        ticker_file = open(self.out_path+"tickers.txt","r")
         tickers = []
         for line in ticker_file:
             tickers.append(line.strip())
@@ -30,11 +31,11 @@ class ToScrapeSpiderYahooSummary(scrapy.Spider):
 
 
     def parse(self, response):
-        filename = "./out/"+response.meta['ticker']+"_summary.txt"
+        filename = self.out_path+response.meta['ticker']+"_summary.csv"
 
         #Check filesize, if not empty, skip
-        #if os.path.isfile(filename) and os.path.getsize(filename) > 0:
-        #    return
+        if os.path.isfile(filename) and os.path.getsize(filename) > 0:
+            return
 
         out_file = open(filename,"w")
 
@@ -71,9 +72,8 @@ class ToScrapeSpiderYahooSummary(scrapy.Spider):
         if not tag_value:
             return False
 
-        print(tag_name+":"+tag_value)
-        out_file.write(tag_name+"\n")
-        out_file.write(tag_value+"\n")
+        print(tag_name+self.field_delim+tag_value)
+        out_file.write(tag_name+self.field_delim+tag_value)
         out_file.write("\n")
 
         return True

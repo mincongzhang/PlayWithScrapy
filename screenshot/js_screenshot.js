@@ -1,6 +1,7 @@
 //https://stackoverflow.com/questions/32531881/retrieve-fully-populated-dynamic-content-with-phantomjs
 //https://stackoverflow.com/questions/25288307/phantomjs-and-clicking-a-form-button
 var system = require('system');
+var OUT_PATH = "/home/user/mizhang/hackathon/crawler/out/";
 var TICKER = "";
 var LINK = "";
 var IMAGE_NAME = "";
@@ -65,15 +66,16 @@ var steps = [
                                  break;
                              }
                          }
-
-                         found_button.click();
+                         if(found_button){
+                             found_button.click();
+                         }
                      });
              },
 
 
              function() {
                  console.log("Rendering image ["+IMAGE_NAME+"]");
-                 page.render(IMAGE_NAME);
+                 page.render(OUT_PATH+IMAGE_NAME);
              }
              ];
 
