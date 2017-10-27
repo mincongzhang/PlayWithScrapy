@@ -1,5 +1,8 @@
 # PlayWithScrapy
 
+How to run? e.g.   
+`scrapy crawl yahoo_holders`
+
 #### Reference:
 
 ##### Install Scrapy under miniconda3 in linux
